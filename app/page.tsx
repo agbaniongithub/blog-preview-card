@@ -4,7 +4,7 @@ import Image from 'next/image'
 const Page = () => {
   return (
     <main className="flex justify-center items-center">
-            <div className="mx-[26px] my-[155px] border border-black-1 rounded-[20px] bg-white-1 min-w-[327] min-h-[501] max-w-[384px] max-h-[218.5]">
+            <div className="mx-[26px] my-[155px] border border-black-1 rounded-[20px] bg-white-1 min-w-[327] min-h-[501] max-w-[384px] max-h-[218.5] drop-shadow-custom">
               <div className="m-[24px]">
                 <div>
                   <Image 

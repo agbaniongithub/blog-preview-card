@@ -24,6 +24,9 @@ const config: Config = {
       },
       fontFamily: {
         figtree: ['var(--font-figtree)'],
+      },
+      dropShadow: {
+        'custom': '8px 8px 0px black'
       }
     },
   },
