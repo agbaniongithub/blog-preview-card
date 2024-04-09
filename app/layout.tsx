@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
-import { PropsWithChildren } from "react";
-import HomePage from "./page";
+
+
 
 const figtree = Figtree({ 
   subsets: ["latin"],
@@ -14,14 +14,21 @@ const figtree = Figtree({
 export const metadata: Metadata = {
   title: "Blog Preview Card",
   description: "David Agbaniyaka",
+  icons: {
+    icon: '/icon.png', // /public path
+  },
 };
 
-export default function RootLayout({children}:PropsWithChildren) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
-    <html lang="en"className={`${figtree.variable}`}>
+    <html lang="en"className={`${figtree.variable}`} >
       <body className="bg-yellow-1 font-figtree">
-        <HomePage />
+        {children}
       </body>
     </html>
-  );
+  )
 }
